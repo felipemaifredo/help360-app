@@ -1,0 +1,107 @@
+:root {
+    --cor-white: #ffffff;
+    --cor-black: #000000;
+    --cor-1: #6767af;
+    --cor-2: #eaeaea;
+}
+
+/* Animations */
+@keyframes animation {
+    0% {
+        margin-top: 0px;
+    }
+
+    20% {
+        margin-top: 0px;
+    }    
+
+    25% {
+        margin-top: -75px;
+    }
+
+    45% {
+        margin-top: -75px;
+    }
+
+    50% {
+        margin-top: -150px;
+    }
+
+    70% {
+        margin-top: -150px;
+    }
+
+    75% {
+        margin-top: -220px;
+    }
+
+    95% {
+        margin-top: -220px;
+    }
+
+    100% {
+        margin-top: 0px;
+    }
+}
+/* FIM Animations */
+
+#sec1 {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: var(--cor-2);
+}
+
+#sec1 h1 {
+    font-size: 2rem;
+    color: var(--cor-1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow-y: hidden;
+    font-weight: 100;
+}
+
+#sec1 .span-pai {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 35px;
+    animation: animation 6s infinite ease;
+    font-weight: bold;
+
+}
+
+.btns-box {
+    display: flex;
+    gap: 50px;
+}
+
+.btns-box a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 200;
+    padding: 10px 20px;
+    transition: all 1s;
+}
+
+.btns-box a:hover {
+    transition: all .2s;
+    transform: scale(1.2);
+}
+
+
+.btns-box a:first-child {
+    color: var(--cor-1);
+    border: 1px solid var(--cor-1);
+}
+
+.btns-box a:nth-child(2) {
+    background-color: var(--cor-1);
+    color: var(--cor-white);
+    border: 1px solid var(--cor-1);
+}
