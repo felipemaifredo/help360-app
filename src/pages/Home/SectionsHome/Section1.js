@@ -11,11 +11,11 @@ const Section1 = () => {
             <img src={LogoHelp360Grande} alt='Logo Help360' />
             <h1>
                 Seu Atendimento mais
-                <span class="span-pai"> 
-                    <span class="span-1">Fácil</span>
-                    <span class="span-3">Acelerado</span>
-                    <span class="span-2">Ágil</span>
-                    <span class="span-4">Eficiente</span>
+                <span className="span-pai"> 
+                    <span className="span-1">Fácil </span>
+                    <span className="span-3">Acelerado </span>
+                    <span className="span-2">Ágil </span>
+                    <span className="span-4">Eficiente </span>
                 </span>
             </h1>
             <div className='btns-box'>

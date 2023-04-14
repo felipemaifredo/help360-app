@@ -1,11 +1,18 @@
 //Imports
 
 //Sections
-import Section1 from "./sections/section1";
+import Section1 from "./SectionsHome/Section1";
+import Section2 from "./SectionsHome/Section2";
+import Section3 from "./SectionsHome/Section3";
+
 
 const Home = () => {
     return (
-        <Section1 />
+        <div>
+            <Section1 />
+            <Section2 />
+            <Section3 />
+        </div>
     )
 }
 
