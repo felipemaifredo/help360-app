@@ -6,8 +6,59 @@
 }
 
 #sec3 {
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     overflow: hidden;
     position: relative;
+    background-color: var(--cor-2);
+    display: flex
+}
+
+#sec3 .text-box-sec3 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    padding-left: 10vw;
+}
+    #sec3 .text-box-sec3 h2 {
+        font-weight: 300;
+        font-size: 1.8rem;
+        color: var(--cor-1);
+    }
+
+    #sec3 .text-box-sec3 a {
+        text-decoration: none;
+        padding: 10px;
+        background-color: var(--cor-1);
+        color: var(--cor-white);
+        font-size: 1.2rem;
+        transition: all 1s;
+    }
+
+        #sec3 .text-box-sec3 a:hover {
+            transition: all .2s;
+            transform: scale(1.1);
+        }
+
+#sec3 .cel-box-sec3 {
+    height: 100%;
+    width: 50%;
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sec3 .cel-box-sec3 .cel-box {
+    height: 90%;
+    width: 60%;
+    background-image: url("../../../assets/imgs/celular-imagem.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  
 }

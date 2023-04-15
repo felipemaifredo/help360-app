@@ -3,15 +3,14 @@ import './style-section2.css';
 
 //Assets
 
-//SLIDER 
-
-// FIM SLIDER
 
 const Section2 = () => {
     return (
         <section id='sec2' className='section'>
-            <div className='slide-box-sec2'>
-                
+            <div className='slides'>
+                <div className='slide'></div>
+                <div className='slide'></div>
+                <div className='slide'></div>
             </div>
             <div className='text-box-sec2'>
                 <h2>
