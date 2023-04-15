@@ -1,8 +1,5 @@
-:root {
-    --cor-white: #ffffff;
-    --cor-black: #000000;
-    --cor-1: #6767af;
-}
+@import '../../variaveis.css';
+
 nav {
     height: 90px;
     width: 100vw;
@@ -17,23 +14,20 @@ nav {
 
 nav .nav-menu {
     height: fit-content;
-    width: 30%;
+    height: fit-content;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     gap: 10px;
-
 }
 
 nav .nav-menu .nav-menu-itens {
     list-style: none;
-    transition: all 1s;    
-
-
+    transition: var(--transition-original);    
 }
     nav .nav-menu .nav-menu-itens:hover {
-        transition: all .2s;
-        transform: scale(1.1);
+        transition: var(--transition-hover);
+        transform: var(--transition-scale);
 
     }
 
@@ -41,7 +35,7 @@ nav .nav-menu .nav-menu-itens a {
     text-decoration: none;
     padding: 5px 15px;
     color: var(--cor-white);
-    font-size: 1.2rem;
+    font-size: var(--text-size-small);
 }
 
 nav .item-destaque-menu {
@@ -58,11 +52,11 @@ nav .link-img-nav {
 
 nav .link-img-nav .img-nav {
     height: 35px;
-    transition: all 1s;
+    transition: var(--transition-original);
 }
 
 nav .link-img-nav .img-nav:hover {
-    transition: all .2s;
-    transform: scale(1.1);
+    transition: var(--transition-hover);
+    transform: var(--transition-scale);
 }
 

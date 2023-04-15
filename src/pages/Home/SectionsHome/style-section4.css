@@ -1,9 +1,5 @@
-:root {
-    --cor-white: #ffffff;
-    --cor-black: #000000;
-    --cor-1: #6767af;
-    --cor-2: #eaeaea;
-}
+@import '../../../variaveis.css';
+
 
 #sec4 {
     height: 100vh;

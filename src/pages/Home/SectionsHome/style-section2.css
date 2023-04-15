@@ -1,9 +1,5 @@
-:root {
-    --cor-white: #ffffff;
-    --cor-black: #000000;
-    --cor-1: #6767af;
-    --cor-2: #eaeaea;
-}
+@import '../../../variaveis.css';
+
 
 /* Animation */
 @keyframes animation-Slider {
@@ -43,7 +39,7 @@
     width: 100vw;
     overflow: hidden;
     position: relative;
-    background-color: var(--cor-2);
+    background-color: var(--cor-7);
 }
 
 .text-box-sec2 {

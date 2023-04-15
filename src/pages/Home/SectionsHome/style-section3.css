@@ -1,17 +1,14 @@
-:root {
-    --cor-white: #ffffff;
-    --cor-black: #000000;
-    --cor-1: #6767af;
-    --cor-2: #eaeaea;
-}
+@import '../../../variaveis.css';
+
 
 #sec3 {
     height: 80vh;
     width: 100vw;
     overflow: hidden;
     position: relative;
-    background-color: var(--cor-2);
-    display: flex
+    background-color: var(--cor-7);
+    display: flex;
+    padding-bottom: 20px;
 }
 
 #sec3 .text-box-sec3 {
@@ -26,7 +23,7 @@
 }
     #sec3 .text-box-sec3 h2 {
         font-weight: 300;
-        font-size: 1.8rem;
+        font-size: var(--text-size-great);
         color: var(--cor-1);
     }
 
@@ -35,30 +32,26 @@
         padding: 10px;
         background-color: var(--cor-1);
         color: var(--cor-white);
-        font-size: 1.2rem;
-        transition: all 1s;
+        font-size: var(--text-size-medium);
+        transition: var(--transition-original);
     }
 
         #sec3 .text-box-sec3 a:hover {
-            transition: all .2s;
-            transform: scale(1.1);
+            transition:var(--transition-hover);
+            transform: var(--transition-scale);
         }
 
 #sec3 .cel-box-sec3 {
     height: 100%;
     width: 50%;
-    
-    
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
-
-#sec3 .cel-box-sec3 .cel-box {
-    height: 90%;
-    width: 60%;
-    background-image: url("../../../assets/imgs/celular-imagem.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-  
-}
+    #sec3 .cel-box-sec3 .cel-box {
+        height: 90%;
+        width: 60%;
+        background-image: url("../../../assets/imgs/celular-imagem.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }

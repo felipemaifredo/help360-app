@@ -1,9 +1,4 @@
-:root {
-    --cor-white: #ffffff;
-    --cor-black: #000000;
-    --cor-1: #6767af;
-    --cor-2: #eaeaea;
-}
+@import '../../../variaveis.css';
 
 /* Animations */
 @keyframes animation {
@@ -53,18 +48,20 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
-    background-color: var(--cor-2);
+    background-color: var(--cor-6);
     padding-top: 90px;
 }
 
 #sec1 h1 {
+
     font-size: 2rem;
+
     color: var(--cor-1);
     display: flex;
     align-items: center;
     gap: 10px;
     overflow-y: hidden;
-    font-weight: 100;
+    font-weight: 400 !important;
 }
 
 #sec1 .span-pai {
@@ -74,7 +71,6 @@
     height: 35px;
     animation: animation 6s infinite ease;
     font-weight: bold;
-
 }
 
 .btns-box {
@@ -84,17 +80,15 @@
 
 .btns-box a {
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size:var(--text-small);
     font-weight: 200;
     padding: 10px 20px;
-    transition: all 1s;
+    transition: var(--transition-original);
 }
-
-.btns-box a:hover {
-    transition: all .2s;
-    transform: scale(1.2);
-}
-
+    .btns-box a:hover {
+        transition: var(--transition-hover);
+        transform: var(--transition-scale);
+    }
 
 .btns-box a:first-child {
     color: var(--cor-1);
