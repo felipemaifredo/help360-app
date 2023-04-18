@@ -19,9 +19,9 @@ const Section3 = () => {
            </div>
            <div className='cel-box-sec3' >
                 <div className='cel-box'> 
-                   <Sec3Observer title={'Oi, Boa Tarde! Estou interessada em suas soluções. Poderiam me explicar um pouco mais, por favor?'} flipped={true} classTitle={'messageFlipd'}/>
+                   <Sec3Observer title={'Oi, Boa Tarde! Tenho interesse em conhecer a Help360, Poderiam me explicar um pouco mais, por favor?'} flipped={true} classTitle={'messageFlipd'}/>
                    <Sec3Observer title={'Olá! <br> Sou o HelpBot, seu assistente de vendas e estou aqui para explicar sobre nossos produtos!'} />
-                   <Sec3Observer title={'Com a Help360, você terá toda a agilidade na palma de sua mão, você terá mais agilidade em sua empresa, assim, entregando a melhor experiência de atendimento para seus clientes'} />
+                   <Sec3Observer title={'Com a Help360, você terá toda a agilidade na palma de sua mão, você terá mais eficiência em sua empresa, assim, entregando a melhor experiência de atendimento para seus clientes.'} />
                    <Sec3Observer title={`
                         Nossas soluções são:<br>
                         <b>Whatsapp:</b> gerencia suas conversas e grupos, tudo isso de uma forma muito mais fácil.<br>

@@ -1,3 +1,5 @@
+@import '../../variaveis.css';
+
 .message-box {  
     transform: scale(85%);
     transition: 1s;
@@ -12,7 +14,7 @@
   }
 
   .mensagem-box {
-    background-color: #e5fdc9;
+    background-color: var(--cor-10);
     padding: 10px;
     font-size: .82rem;
     width: 330px;
@@ -29,7 +31,7 @@
   }
 
   .messageFlipd {
-    background-color: white;
+    background-color: var(--cor-white);
     border-radius: 10px 0 10px 10px;
     margin-left: 0 !important;
     margin-right: 90px;
