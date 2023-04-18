@@ -6,7 +6,7 @@ import './Chat-sec3-observer.css';
 
 //Assets
 
-const Sec3Observer = ({ title, flipped }) => {
+const Sec3Observer = ({ text, flipped }) => {
 
     const { ref, inView } = useInView({
         threshold: 0.9,
@@ -17,7 +17,7 @@ const Sec3Observer = ({ title, flipped }) => {
             return (
               <>
                 <div className="mensagem-box">
-                  <p className='mensagem' dangerouslySetInnerHTML= {{ __html: title }} />
+                  <p className='mensagem' dangerouslySetInnerHTML= {{ __html: text }} />
                 </div>
               </>
             );
@@ -25,7 +25,7 @@ const Sec3Observer = ({ title, flipped }) => {
             return (
               <>
                 <div className="mensagem-box messageFlipd">
-                  <p className='mensagem' dangerouslySetInnerHTML= {{ __html: title }} />
+                  <p className='mensagem' dangerouslySetInnerHTML= {{ __html: text }} />
                 </div>
               </>
             );

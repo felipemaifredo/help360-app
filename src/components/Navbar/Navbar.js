@@ -1,5 +1,4 @@
 //Imports
-import React, { useState } from "react";
 
 //Style
 import './style-nav.css';

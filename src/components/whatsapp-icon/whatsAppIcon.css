@@ -1,0 +1,42 @@
+@import '../../variaveis.css';
+
+
+@keyframes pulseAnimation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.whatsapp-box {
+    position: fixed;
+    width: 90px;
+    height: 90px;
+    bottom: 3%;
+    right: 5%;
+    z-index: 2;
+    background-color: #29a71a;
+    border-radius: 50%;    
+    cursor: pointer;
+    animation: pulseAnimation 1s infinite alternate-reverse;
+}
+
+.whatsapp-message {
+    position: absolute;
+    left: 0;
+}
+
+.whatsapp-box a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-box a img {
+    height: 65%;
+   
+}

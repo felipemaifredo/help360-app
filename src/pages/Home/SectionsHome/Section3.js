@@ -19,16 +19,16 @@ const Section3 = () => {
            </div>
            <div className='cel-box-sec3' >
                 <div className='cel-box'> 
-                   <Sec3Observer title={'Oi, Boa Tarde! Tenho interesse em conhecer a Help360, Poderiam me explicar um pouco mais, por favor?'} flipped={true} classTitle={'messageFlipd'}/>
-                   <Sec3Observer title={'Olá! <br> Sou o HelpBot, seu assistente de vendas e estou aqui para explicar sobre nossos produtos!'} />
-                   <Sec3Observer title={'Com a Help360, você terá toda a agilidade na palma de sua mão, você terá mais eficiência em sua empresa, assim, entregando a melhor experiência de atendimento para seus clientes.'} />
-                   <Sec3Observer title={`
+                   <Sec3Observer text={'Oi, Boa Tarde! Tenho interesse em conhecer a Help360, Poderiam me explicar um pouco mais, por favor?'} flipped={true} />
+                   <Sec3Observer text={'Olá! <br> Sou o HelpBot, seu assistente de vendas e estou aqui para explicar sobre nossos produtos!'} />
+                   <Sec3Observer text={'Com a Help360, você terá toda a agilidade na palma de sua mão, você terá mais eficiência em sua empresa, assim, entregando a melhor experiência de atendimento para seus clientes.'} />
+                   <Sec3Observer text={`
                         Nossas soluções são:<br>
-                        <b>Whatsapp:</b> gerencia suas conversas e grupos, tudo isso de uma forma muito mais fácil.<br>
+                        <b>WhatsApp:</b> gerencia suas conversas e grupos, tudo isso de uma forma muito mais fácil.<br>
                         <b>ChatBot:</b> Colete os dados dos clientes, segmente a demanda para a equipe responsável e no final, temos pesquisa de NPS.<br>
                         <b>Ticket:</b> todas as tratativas internas organizadas por fila e responsáveis.
                     `} />
-                   <Sec3Observer title={'Nossa que incrível!!! Quero contratar Agora!'} flipped={true} classTitle={'messageFlipd'}/>
+                   <Sec3Observer text={'Nossa que incrível!!! Quero contratar Agora!'} flipped={true}/>
                 </div>
            </div>
         </section>
