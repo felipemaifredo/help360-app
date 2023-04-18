@@ -1,4 +1,5 @@
 //Imports
+import React, { useState } from 'react';
 
 //Style
 import './style-nav.css';
@@ -8,13 +9,15 @@ import LogoHelp360 from '../../assets/imgs/help360-logo.png';
 
 const Navbar = () => {
     
+    const [isMenuActive, setIsMenuActive] = useState(false);
+      
     const toggleMenu = () => {
-        document.querySelector('nav').classList.toggle('nav-menu-active');
-    }
+        setIsMenuActive(!isMenuActive);
+    };
 
     return (
-        <nav>
-            <a href='#sec1' className='link-img-nav'> 
+        <nav className={isMenuActive ? 'nav-menu-active' : ''}>
+        <a href='#sec1' className='link-img-nav'> 
                 <img src={LogoHelp360} className='img-nav' alt='Logo da Help 360' />
             </a>
             <button className='btn-menu' onClick={toggleMenu}>

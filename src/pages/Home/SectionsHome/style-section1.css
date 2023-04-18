@@ -27,15 +27,53 @@
     }
 
     75% {
-        margin-top: -45%;
+        margin-top: -43.5%;
     }
 
     95% {
-        margin-top: -45%;
+        margin-top: -43.5%;
     }
 
     100% {
         margin-top: 0px;
+    }
+}
+
+@keyframes animationMobile {
+    0% {
+        margin-top: 2%;
+    }
+
+    20% {
+        margin-top: 2%;
+    }    
+
+    25% {
+        margin-top: -12%;
+    }
+
+    45% {
+        margin-top: -12%;
+    }
+
+    50% {
+        margin-top: -27%;
+    }
+
+    70% {
+        margin-top: -27%;
+    }
+
+    75% {
+        margin-top: -42%;
+    }
+
+    95% {
+        margin-top: -42%;
+    }
+
+    100% {
+        margin-top: 2%;
     }
 }
 /* FIM Animations */
@@ -53,9 +91,8 @@
 }
 
 #sec1 h1 {
-
+    height: 2.5rem;
     font-size: 2rem;
-
     color: var(--cor-1);
     display: flex;
     align-items: center;
@@ -99,4 +136,23 @@
     background-color: var(--cor-1);
     color: var(--cor-white);
     border: 1px solid var(--cor-1);
+}
+
+@media (max-width: 900px) {
+
+    #sec1 {
+        height: 65vh;
+
+    }
+    
+    #sec1 h1 {
+        height: 2rem;
+        font-size: 1.4rem;
+        gap: 7px;
+    }
+
+    #sec1 .span-pai {
+        animation: animationMobile 6s infinite ease;
+    }
+    
 }
