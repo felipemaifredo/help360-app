@@ -1,8 +1,7 @@
 @import '../../../variaveis.css';
 
-
 #sec3 {
-    height: 80vh;
+    height: 90vh;
     width: 100vw;
     overflow: hidden;
     position: relative;
@@ -45,7 +44,7 @@
     height: 100%;
     width: 50%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 }
     #sec3 .cel-box-sec3 .cel-box {
@@ -54,4 +53,10 @@
         background-image: url("../../../assets/imgs/celular-imagem.png");
         background-size: cover;
         background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+       justify-content: center;
+        gap: 5px;
+        padding-top: 60px;
     }
