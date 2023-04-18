@@ -54,6 +54,7 @@
     .text-box-sec2 h2 {
         color: var(--cor-white);
         font-weight: 300;
+        text-align: center;
     }
 
 #sec2 .slides {

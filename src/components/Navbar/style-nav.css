@@ -28,7 +28,6 @@ nav .nav-menu .nav-menu-itens {
     nav .nav-menu .nav-menu-itens:hover {
         transition: var(--transition-hover);
         transform: var(--transition-scale);
-
     }
 
 nav .nav-menu .nav-menu-itens a {
@@ -60,3 +59,108 @@ nav .link-img-nav .img-nav:hover {
     transform: var(--transition-scale);
 }
 
+nav .btn-menu {
+    display: none;
+}
+
+
+@media (max-width: 900px) {
+
+    nav {
+        position: relative;
+    }
+
+    nav .nav-menu {
+        width: 100%;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        background-color: var(--cor-1);
+        padding: 30px;
+        
+        top: 0px;
+        opacity: 0;
+        z-index: -1;
+        pointer-events: none;
+        transition: var(--transition-original);
+    }
+
+    .nav-menu-active .nav-menu {
+        top: 90px;
+        opacity: 1;
+        z-index: -1;
+        pointer-events: all;
+        transition: var(--transition-hover);
+    }
+
+    nav .btn-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        background-color: transparent;
+        border: none;
+        width: 40px;
+        height: 40px;
+    }
+
+    nav .btn-menu .line {
+        width: 50px;
+	    height: 7px; 
+	    background-color: var(--cor-white);
+	    border-radius: 5px;
+        transition: all .5s;
+    }
+
+        .nav-menu-active .btn-menu .line1 {
+            transform: translate3d(0,14px,0) rotate(-315deg);
+        }
+
+        .nav-menu-active .btn-menu .line2 {
+            transform: scale(0);
+         }
+
+        .nav-menu-active .btn-menu .line3 {
+            transform: translate3d(0,-15px,0) rotate(-225deg);
+         }
+/*
+        nav .btn-menu::after {
+            content: "";
+            height: 4px;
+            width: 40px;
+            background-color: var(--cor-white);
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 10px;
+            transition: all .2s;
+        } 
+
+        nav .btn-menu::before {
+            content: "";
+            height: 4px;
+            width: 40px;
+            background-color: var(--cor-white);
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 25px;
+            transition: all .2s;
+        }
+
+    .nav-menu-active .btn-menu::after {
+       transform: scale(0);
+    }
+
+    .nav-menu-active .btn-menu {
+       
+    }
+
+    .nav-menu-active .btn-menu {
+       
+    }
+*/
+}
