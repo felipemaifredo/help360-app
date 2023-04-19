@@ -12,35 +12,3 @@
     transition: 1s;
     transition-delay: .2s;
   }
-
-  .mensagem-box {
-    background-color: var(--cor-10);
-    padding: 10px;
-    font-size: .82rem;
-    width: 330px;
-    border-radius: 0 10px 10px 10px;
-    margin-left: 90px;
-    transition: all 1s;
-  }
-
-  .mensagem-box:hover {
-    transform: scale(1.1);
-    transition: all .2s;
-    margin-top: 2%;
-    margin-bottom: 2%;
-  }
-
-  .messageFlipd {
-    background-color: var(--cor-white);
-    border-radius: 10px 0 10px 10px;
-    margin-left: 0 !important;
-    margin-right: 90px;
-  }
-
-  @media (min-width: 1500px)
-{
-    .mensagem-box {
-        width: 400px;
-        font-size: 1.1rem;
-      }
-}

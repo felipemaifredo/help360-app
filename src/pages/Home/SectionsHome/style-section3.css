@@ -55,8 +55,81 @@
         background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
-       align-items: center;
-       justify-content: center;
+        align-items: center;
+        justify-content: center;
         gap: 5px;
         padding-top: 60px;
     }
+
+    #sec3 .mensagem-box {
+        background-color: var(--cor-10);
+        padding: 10px;
+        font-size: .82rem;
+        width: 330px;
+        border-radius: 0 10px 10px 10px;
+        margin-left: 90px;
+        transition: all 1s;
+      }
+    
+      #sec3  .mensagem-box:hover {
+        transform: scale(1.1);
+        transition: all .2s;
+        margin-top: 2%;
+        margin-bottom: 2%;
+      }
+    
+      #sec3 .messageFlipd {
+        background-color: var(--cor-white);
+        border-radius: 10px 0 10px 10px;
+        margin-left: 0 !important;
+        margin-right: 90px;
+      }
+
+@media (min-width: 1500px) {
+    .mensagem-box {
+        width: 400px;
+        font-size: 1.1rem;
+      }
+}
+
+@media (max-width: 900px) {
+    #sec3 {
+        height: fit-content;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    #sec3 .text-box-sec3 {
+        height: 50%;
+        width: 95%;
+        padding-left: 0vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #sec3 .text-box-sec3 h2 {    
+        text-align: center;    
+        padding: 10px;
+    }
+
+    #sec3 .cel-box-sec3 {
+        height: 50%;
+        width: 95%;
+    }
+        #sec3 .cel-box-sec3 .cel-box {
+            height: fit-content;
+            min-height: 530px;  
+            width: 95%;
+        }
+        
+        #sec3 .mensagem-box {
+            font-size: .7rem;
+            width: 280px;
+            margin-left: 40px;
+        }
+            
+              #sec3 .messageFlipd {
+                margin-right: 50px;
+              }
+
+}
