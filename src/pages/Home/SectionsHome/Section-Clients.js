@@ -13,11 +13,11 @@ const ClientsSection = () => {
   const [containerWidth, setContainerWidth] = useState(0);
 
   const handleNextClick = () => {
-    containerRef.current.scrollLeft += containerWidth;
+    containerRef.current.scrollLeft += containerWidth / 2;
   };
 
   const handlePrevClick = () => {
-    containerRef.current.scrollLeft -= containerWidth;
+    containerRef.current.scrollLeft -= containerWidth / 2;
   };
 
   const handleContainerResize = () => {
@@ -34,6 +34,13 @@ const ClientsSection = () => {
         <BsChevronCompactLeft className='btn-icon-navigation' />
       </button>
       <div className='container' ref={containerRef} onLoad={handleContainerResize} onResize={handleContainerResize}>
+        <CardClient photo={person1} name={'Celso Lopes'} text={'A Help veio literalmente para dar um help nota 10!'} />
+        <CardClient photo={person1} name={'Celso Lopes'} text={'A Help veio literalmente para dar um help nota 10!'} />
+        <CardClient photo={person1} name={'Celso Lopes'} text={'A Help veio literalmente para dar um help nota 10!'} />
+        <CardClient photo={person1} name={'Celso Lopes'} text={'A Help veio literalmente para dar um help nota 10!'} />
+        <CardClient photo={person1} name={'Celso Lopes'} text={'A Help veio literalmente para dar um help nota 10!'} />
+        <CardClient photo={person1} name={'Celso Lopes'} text={'A Help veio literalmente para dar um help nota 10!'} />
+        <CardClient photo={person1} name={'Celso Lopes'} text={'A Help veio literalmente para dar um help nota 10!'} />
         <CardClient photo={person1} name={'Celso Lopes'} text={'A Help veio literalmente para dar um help nota 10!'} />
         <CardClient photo={person1} name={'Celso Lopes'} text={'A Help veio literalmente para dar um help nota 10!'} />
         <CardClient photo={person1} name={'Celso Lopes'} text={'A Help veio literalmente para dar um help nota 10!'} />
