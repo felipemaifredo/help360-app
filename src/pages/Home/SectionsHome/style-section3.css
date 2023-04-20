@@ -85,13 +85,6 @@
         margin-right: 90px;
       }
 
-@media (min-width: 1500px) {
-    .mensagem-box {
-        width: 400px;
-        font-size: 1.1rem;
-      }
-}
-
 @media (max-width: 900px) {
     #sec3 {
         height: fit-content;
@@ -132,4 +125,15 @@
                 margin-right: 50px;
               }
 
+}
+
+@media (min-width: 1500px) {
+    #sec3 .cel-box-sec3 .cel-box {
+        padding-top: 100px;
+    }
+    #sec3 .mensagem-box {
+        width: 400px;
+        font-size: 1.1rem;
+       
+    }
 }
