@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/help360-app/static/css/main.e4100efb.css",
-    "main.js": "/help360-app/static/js/main.acf158ad.js",
+    "main.js": "/help360-app/static/js/main.c96dbf28.js",
     "static/js/787.d07abbbe.chunk.js": "/help360-app/static/js/787.d07abbbe.chunk.js",
     "static/media/1.png": "/help360-app/static/media/1.d216943b9319663db1dc.png",
     "static/media/bg2-sec1.webp": "/help360-app/static/media/bg2-sec1.9b05e9db9b7abed7c1cb.webp",
@@ -11,11 +11,11 @@
     "static/media/novaya.png": "/help360-app/static/media/novaya.95c1a84159264d9bb5e1.png",
     "index.html": "/help360-app/index.html",
     "main.e4100efb.css.map": "/help360-app/static/css/main.e4100efb.css.map",
-    "main.acf158ad.js.map": "/help360-app/static/js/main.acf158ad.js.map",
+    "main.c96dbf28.js.map": "/help360-app/static/js/main.c96dbf28.js.map",
     "787.d07abbbe.chunk.js.map": "/help360-app/static/js/787.d07abbbe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e4100efb.css",
-    "static/js/main.acf158ad.js"
+    "static/js/main.c96dbf28.js"
   ]
 }
