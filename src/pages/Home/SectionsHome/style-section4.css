@@ -193,6 +193,9 @@
 
     #sec4 .box-card-sec4 .card-sec4 .info-container .info-img-box {
         height: 50%;
-        width: 80%;
+        width: 70%;
     }    
+    #sec4 .box-card-sec4 .card-sec4 .info-container .info-img-box img {
+        width: 50%;
+    }
 }
