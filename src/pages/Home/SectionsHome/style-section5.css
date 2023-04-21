@@ -1,0 +1,8 @@
+@import '../../../variaveis.css';
+
+
+#sec5 {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--cor-1);
+}

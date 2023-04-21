@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 function ScrollTo() {
   useEffect(() => {
@@ -17,10 +17,10 @@ function ScrollTo() {
   function scrollToIdOnClick(event) {
     event.preventDefault();
     const element = event.target.getAttribute('href');
-    const toSection = document.querySelector(element).offsetTop;
+    const toSection = document.querySelector(element).offsetTop - 90;
     
     window.scroll({
-      top: toSection,
+      top: toSection ,
       behavior: "smooth",
     });
   }

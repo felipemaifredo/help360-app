@@ -33,6 +33,7 @@
         color: var(--cor-white);
         font-size: var(--text-size-medium);
         transition: var(--transition-original);
+        border-radius: 5px;
     }
 
         #sec3 .text-box-sec3 a:hover {

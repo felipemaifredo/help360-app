@@ -121,22 +121,28 @@
     font-weight: 500;
     padding: 10px 20px;
     transition: var(--transition-original);
+     border-radius: 5px;
 }
-    .btns-box a:hover {
-        transition: var(--transition-hover);
-        transform: var(--transition-scale);
-    }
+    
 
 .btns-box a:first-child {
-    color: var(--cor-1);
-    border: 1px solid var(--cor-1);
+    color: var(--cor-5);
+    border: 1px solid var(--cor-5);
 }
 
 .btns-box a:nth-child(2) {
-    background-color: var(--cor-1);
+    background-color: var(--cor-5);
     color: var(--cor-white);
-    border: 1px solid var(--cor-1);
+    border: 1px solid var(--cor-5);
 }
+
+.btns-box a:hover {
+        transition: var(--transition-hover);
+        transform: var(--transition-scale);
+        background-color: var(--cor-1);
+        border: 1px solid var(--cor-1);
+        color: var(--cor-white);
+    }
 
 @media (max-width: 900px) {
 
