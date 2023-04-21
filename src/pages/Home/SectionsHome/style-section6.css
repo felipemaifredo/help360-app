@@ -1,0 +1,47 @@
+@import '../../../variaveis.css';
+
+@keyframes pulseAnimation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+
+#sec6 {
+    height: 50vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    background-color: var(--cor-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#sec6 h2 {
+    text-align: center;
+    color: var(--cor-1);
+    font-weight: 500;
+    font-size: var(--text-size-great);
+}
+
+#sec6 a {
+    text-decoration: none;
+    font-size:var(--text-small);
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: var(--transition-original);
+    color: var(--cor-1);
+    border: 1px solid var(--cor-1);
+    animation: pulseAnimation 1s infinite alternate-reverse;
+}
+    #sec6 a:hover {
+        transition: var(--transition-hover);
+        transform: var(--transition-scale);
+        animation: none;
+    }

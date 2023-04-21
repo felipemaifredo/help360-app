@@ -2,6 +2,7 @@
 import { BsFacebook } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 //Style
 import './style-footer.css';
@@ -20,7 +21,7 @@ const Footer = () => {
                 <div className='content-box-footer'>
                     <div className='colum-content'>
                         <h3 className='colum-content-title'>A Help 360</h3>
-                        <a href='#' className='colum-content-item'>Quem Somos</a>
+                        <Link to='/quem-somos' className='colum-content-item'>Quem Somos</Link>
                         <a href='#' className='colum-content-item'>Produtos</a>
                         <a href='#' className='colum-content-item'>Cases de Sucesso</a>
                         <a href='#' className='colum-content-item'>Avalie a Help360</a>

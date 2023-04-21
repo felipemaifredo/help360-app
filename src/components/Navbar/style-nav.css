@@ -29,7 +29,7 @@ nav .nav-menu .nav-menu-itens {
         transform: var(--transition-scale);
     }
 
-nav .nav-menu .nav-menu-itens a {
+nav .nav-menu .nav-menu-itens a, nav .nav-menu .nav-menu-itens Link {
     text-decoration: none;
     padding: 5px 15px;
     color: var(--cor-white);
