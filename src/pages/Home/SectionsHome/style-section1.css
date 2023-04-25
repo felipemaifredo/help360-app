@@ -79,7 +79,8 @@
 /* FIM Animations */
 
 #sec1 {
-    height: 80vh;
+    height: 50vh;
+    min-height: 450px;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -147,7 +148,8 @@
 @media (max-width: 900px) {
 
     #sec1 {
-        height: 65vh;
+        height: 50vh;
+        min-height: 450px;
 
     }
     
