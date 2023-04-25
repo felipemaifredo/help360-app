@@ -12,8 +12,41 @@ const Navbar = () => {
 
     const toggleMenu = () => {
         setIsMenuActive(!isMenuActive);
+        setAria()
     };
 
+    const setAria = () => {
+        let btnMenu = document.querySelector('.btn-menu');
+        let Nav = document.querySelector('nav');
+        let isActive = Nav.classList.contains('nav-menu-active');
+        
+        btnMenu.setAttribute('aria-expanded', !isActive);
+        if (isActive) {
+            btnMenu.setAttribute('aria-label', 'Abrir Menu');
+        } else {
+            btnMenu.setAttribute('aria-label', 'Fechar Menu');
+        }
+    }
+
+    const verifyMenu = () => {
+        let btnMenu = document.querySelector('.btn-menu');
+        let btnMenuStyles = getComputedStyle(btnMenu);
+        let isFlex = btnMenuStyles.display === 'flex';
+        if (isFlex) {
+            toggleMenu();
+        };
+    };
+
+    const renderLink = (text, link) => {
+        return (
+            isHome ? (
+              <a href={link} className="navigation-link" onClick={verifyMenu}> {text} </a>
+            ) : (
+              <Link to="/"> {text} </Link>
+            )
+        )
+    };
+      
     return (
         <nav className={`${isMenuActive ? 'nav-menu-active' : ''} ${isHome ? 'nav-menu-home' : ''}`}>
             {isHome ? (
@@ -25,20 +58,20 @@ const Navbar = () => {
                         <img src={LogoHelp360} className='img-nav' alt='Logo da Help 360' /> 
                     </Link> 
                 )}
-            <button className='btn-menu' onClick={toggleMenu}>
+            <button className='btn-menu' onClick={toggleMenu} aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
                 <span className="line line1"></span>
 				<span className="line line2"></span>
 				<span className="line line3"></span>
             </button>
             <ul className='nav-menu'>
                 <li className='nav-menu-itens'>
-                    {isHome ? ( <a href='#sec1' className='navigation-link' > Produtos </a> ) : ( <Link to="/" > Produtos </Link> )}
+                    {renderLink("Produtos", "#sec4" )}
                 </li>
                 <li className='nav-menu-itens'>
-                    {isHome ? ( <a href='#ClientsSection' className='navigation-link'>Feedbacks</a> ) : ( <Link to="/">Feedbacks</Link> )}
+                    {renderLink("Feedbacks", "#ClientsSection" )}
                 </li>
-                <li className='nav-menu-itens'>
-                    {isHome ? ( <a href='#sec6' className='item-destaque-menu navigation-link'>Teste Grátis</a> ) : ( <Link to="/" className='item-destaque-menu'>Teste Grátis</Link> )}
+                <li className='nav-menu-itens item-destaque-menu'>  
+                    {renderLink("Teste Grátis", "#sec6", )}
                 </li>
             </ul>
         </nav>

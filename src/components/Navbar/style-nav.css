@@ -36,7 +36,7 @@ nav .nav-menu .nav-menu-itens a, nav .nav-menu .nav-menu-itens Link {
     font-size: var(--text-size-small);
 }
 
-nav .item-destaque-menu {
+nav .item-destaque-menu a{
     background-color: var(--cor-white);
     color: var(--cor-1) !important;
     border-radius: 5px;
