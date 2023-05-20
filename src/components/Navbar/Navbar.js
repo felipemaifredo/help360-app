@@ -37,7 +37,7 @@ const Navbar = () => {
         };
     };
 
-    const renderLink = (text, link) => {
+    const renderLink = (text, link, Tag) => {
         return (
             isHome ? (
               <a href={link} className="navigation-link" onClick={verifyMenu}> {text} </a>
@@ -71,7 +71,7 @@ const Navbar = () => {
                     {renderLink("Feedbacks", "#ClientsSection" )}
                 </li>
                 <li className='nav-menu-itens item-destaque-menu'>  
-                    {renderLink("Teste Grátis", "#sec6", )}
+                    <Link to="/fale-conosco"> Teste Grátis </Link>
                 </li>
             </ul>
         </nav>

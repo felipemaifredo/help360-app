@@ -11,6 +11,8 @@ import Section6 from "./SectionsHome/Section6";
 import ClientsSection from "./SectionsHome/Section-Clients";
 
 const Home = () => {
+    document.title = "Help360 | Seu Suporte Mais Eficiente!"
+
     return (
         <div>
             <Section1 />

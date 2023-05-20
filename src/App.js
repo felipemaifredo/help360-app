@@ -1,6 +1,5 @@
 import './App.css';
 import { Routes, Route, HashRouter } from 'react-router-dom';
-import { useEffect } from "react";
 
 //Components
 import Navbar from './components/Navbar/Navbar';
@@ -10,6 +9,8 @@ import Footer from './components/Footer/Footer';
 //Pages
 import Home from './pages/Home/Home';
 import Somos from './pages/QuemSomos/QuemSomos';
+import FaleConosco from './pages/FalaConosco/FaleConosco';
+import PageNotFound from './pages/PageNotFound/PageNotFound.js';
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
         <WhatsAppIcon />
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/fale-conosco' element={<FaleConosco />} />
           <Route path='/quem-somos' element={<Somos />} />
+          <Route path='*' element={<PageNotFound />} />
         </Routes>
         <Footer />
       </HashRouter>

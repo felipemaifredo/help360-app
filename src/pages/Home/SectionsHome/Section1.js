@@ -2,6 +2,7 @@
 import './style-section1.css';
 
 //Assets
+import { Link } from 'react-router-dom';
 import LogoHelp360Grande from '../../../assets/imgs/help360-logo-grande.png';
 
 
@@ -19,7 +20,7 @@ const Section1 = () => {
                 </span>
             </h1>
             <div className='btns-box'>
-                <a href='#sec-teste'>Teste Grátis</a>
+                <Link to="/fale-conosco"> Teste Grátis </Link>
                 <a href='#sec-contato'>Fale Conosco</a>
             </div>
         </section>

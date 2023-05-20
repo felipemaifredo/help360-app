@@ -1,0 +1,81 @@
+@import url('../../variaveis.css');
+
+#fale-conosco {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-9);
+    padding-top: 90px;
+}
+
+#fale-conosco .text-box-fale {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#fale-conosco .text-box-fale img {
+    width: 250px;
+}
+
+#fale-conosco .text-box-fale h1 {
+    width: 60%;
+    font-size: 1.5rem;
+    color: var(--cor-white);
+    font-weight: 400;
+}
+
+form {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+form .input-box {
+    height: 300px;
+    width: 70%;
+    background-color: var(--cor-5);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 7px solid var(--cor-1);
+}
+
+form .input-box input {
+    width: 80%;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+form button {
+    padding: 10px 40px;
+    background-color: transparent;
+    color: var(--cor-white);
+    border: 2px solid var(--cor-white);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 1s;
+    border-radius: 10px;
+}
+
+form button:hover {
+    transition: all .2s;
+    color: var(--cor-1);
+    background-color: var(--cor-white);
+    transform: scale(1.2);
+}
